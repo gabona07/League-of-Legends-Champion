@@ -1,5 +1,6 @@
 package com.example.leagueoflegends.view
 
+import android.annotation.SuppressLint
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,9 +27,10 @@ class MainActivity : AppCompatActivity(), BaseContract.BaseView {
         displayChampions()
     }
 
+    @SuppressLint("CheckResult")
     private fun displayChampions() {
         val adapter = MainAdapter()
-        val response = presenter.getChampions()
+        presenter.getChampions()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe( {

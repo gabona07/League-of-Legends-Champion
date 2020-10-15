@@ -33,7 +33,8 @@ class MainAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         holder.itemView.nameTextView.text = currentChampion.name
         holder.itemView.titleTextView.text = currentChampion.title
         holder.itemView.descriptionTextView.text = currentChampion.blurb
-        Picasso.get().load("http://ddragon.leagueoflegends.com/cdn/10.21.1/img/champion/${currentChampion.name}.png").into(holder.itemView.avatar);
+        // Somehow this doesn't work
+        Picasso.get().load("http://ddragon.leagueoflegends.com/cdn/10.21.1/img/champion/${currentChampion.name}.png").into(holder.itemView.avatar)
     }
 
     override fun getItemCount(): Int {

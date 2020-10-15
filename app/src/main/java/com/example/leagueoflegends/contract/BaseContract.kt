@@ -1,5 +1,7 @@
 package com.example.leagueoflegends.contract
 
+import com.example.leagueoflegends.model.Response
+import io.reactivex.Single
 import java.lang.Exception
 
 interface BaseContract {
@@ -11,5 +13,6 @@ interface BaseContract {
     interface BasePresenter {
         fun onAttach(view: BaseView)
         fun onDetach()
+        fun getChampions(): Single<Response>
     }
 }

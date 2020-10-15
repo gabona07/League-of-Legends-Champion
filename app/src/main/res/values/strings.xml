@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LeagueOfLegends</string>
+    <string name="about">About</string>
+    <string name="swordmaster">SwordMaster</string>
+    <string name="gabi">Gabi</string>
+    <string name="avatar">avatar</string>
+    <string name="this_is_a_long_description_about_the_champion">This is a long description about the champion.</string>
 </resources>

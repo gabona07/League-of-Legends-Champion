@@ -1,9 +1,10 @@
-package com.example.leagueoflegends
+package com.example.leagueoflegends.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.leagueoflegends.R
 
 class SplashActivity : AppCompatActivity() {
     private var mDelayHandler: Handler? = null
